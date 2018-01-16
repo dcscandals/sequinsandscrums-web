@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Tip. These. Men.</title>
+  	
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body onresize="equalizeQueenBoxes()">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/tip.js?18" type="text/javascript"></script>
+
+  <div class="show-logo" style="text-align:center">
+	  <img src="img/logo.jpg" width="300px" alt="Sequins and Scrums Logo">
+	</div>
+  <div class="intro">
+  <p>
+  Back by popular demand! Sequins &amp; Scrums, the drag show fundraiser hosted by Washington Scandals Rugby is back on <a href="https://www.google.com/calendar/event?eid=dHZhNjV2azFpZ2JpYXBiZjBsM3JwbHZrZXMgOGFoazg1dWxmYW12MWRic3J1b3ZvZ3Z0bmNAZw&ctz=America/New_York">Friday, February 23rd</a> at <a href="https://goo.gl/maps/6UYReNxrVi42">Town Danceboutique</a>. The money raised will be used to help send the Scandals to <a href="https://www.binghamcup.com/">Bingham Cup</a>, the world cup of gay rugby. Bingham Cup is named for Mark Bingham, a gay rugby pioneer who died on 9/11 aboard Flight 93. Are you interested in trying rugby? The Scandals are hosting a rugby 101 the day following the show. <a href="https://www.facebook.com/events/147993215857626/">RSVP here</a> for details.<br><br></p>
+  <p>
+	From now until February 22, we are accepting donations in the form of "tips" for the queens. Browse through our ten queens below, and tip your favorites! Tips are being collected via Venmo. (<a href="novenmo.html">No Venmo account? click here</a>) All money collected goes to the Scandals Bingham Cup fund, but the queen who receives the most tips will automatically advance to the final, where she will lip sync for her life in the hopes of becoming Scrum Queen 2018. Totals are updated every few days. Tips sent on or after show day will still go to our Bingham fund but may not be counted towards your queen.<br><br>
+	</p>
+	<p>For all the latest info about Sequins and Scrums 2018, <a href="https://www.facebook.com/events/1754529471521204/">RSVP to our Facebook event</a>!</p>
+	</div>
+
+
+	<div style="min-width:100%;padding:16px">
+		<div class="progress" style="max-width: 800px; margin:0 auto">
+		  <span class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+		  	aria-valuemin="0" aria-valuemax="100" style="width:0%;color:#000;font-size:1em;" id="total-progress-bar">
+		    &nbsp;<b>$<span id="overall-dollar-figure"></span></b>&nbsp;of&nbsp;$<span id="overall-goal"></span>&nbsp;goal&nbsp;raised
+		  </span>
+		</div>
+	</div>
+
+  <h1 align="center" style="padding-top:1em">Meet Your Queens</h1>
+  <div class="loading-area">
+	  <div class="loader"></div>
+	  <p align="center" style='margin-top:8px'>loading the queens...</p>
+	</div>
+
+	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 , queen-box">
+    <div class="hovereffect">
+        <img class="img-responsive" src="" alt="">
+        <div class="overlay">
+           <h2 class="overlay-queen-name"></h2>
+           <a class="info" href="#">Tip her on Venmo</a>
+        </div>
+    </div>
+    <div class="about-queen">
+	    <h1 class="queen-name"></h1>
+	    <div class="money-line">
+	    	<div class="pbt" style="vertical-align:baseline;">
+	    		<a class="button" href="#" style="float:left;margin-right: 1em;">Tip Her</a>
+	    		<div style="min-height: 0.75em"></div>
+		    	<div class="progress">
+					  <span class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30"
+					  	aria-valuemin="0" aria-valuemax="100" style="width:30%;color:#000;font-size:1em;" id="progress-bar">
+					    &nbsp;$<span class="dollar-figure">0.00</span>&nbsp;raised
+					  </span>
+					</div>
+				</div>
+	    </div>
+    	<div class="bio"></div>
+	  </div>
+	</div>
+
+	<div id="queengrid"></div>
+
+	<div class="col-xs-12", style="text-align:center">
+		<a href="https://www.scandalsrfc.org/">
+			<img src="img/crest-large.png" width="150px" alt="Washington Scandals RFC crest">
+		</a>
+		<div class="footer">
+		<p>Sequins &amp; Scrums is hosted by <a href="https://www.scandalsrfc.org/">Washington Scandals Rugby Football Club</a>, a gay and inclusive men's Rugby Union team located in Washington, DC. Washington Scandals RFC is a registered 501(c)(3) non-profit organization. To learn more about us, please visit <a href="https://www.scandalsrfc.org/">our website</a> and <a href="https://www.facebook.com/WashingtonScandals/">follow us</a> on Facebook.<br><br>
+		</p>
+		<p>
+		For media inquiries: <a href="mailto:sequinsandscrums@scandalsrfc.org">sequinsandscrums@scandalsrfc.org</a>
+		</p>
+		<div>
+	</div>
+
+  </body>
+</html>

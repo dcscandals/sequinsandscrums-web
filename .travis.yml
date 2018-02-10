@@ -15,11 +15,11 @@ before_install:
 deploy:
 - provider: script
   skip_cleanup: true
-  script: rsync -v -r --delete-after --exclude '.git*' --exclude '*.enc' --exclude '.travis.*' $TRAVIS_BUILD_DIR/ deploy@138.197.48.54:/var/www/www-sequinsandscrums-org
+  script: "rsync -v -r --delete-after --exclude '.git*' --exclude '*.enc' --exclude '.travis.*' $TRAVIS_BUILD_DIR/ deploy@138.197.48.54:/var/www/www-sequinsandscrums-com"
   on:
     branch: master
 - provider: script
   skip_cleanup: true
-  script: rsync -v -r --delete-after --exclude '.git*' --exclude '*.enc' --exclude '.travis.*' $TRAVIS_BUILD_DIR/ deploy@138.197.48.54:/var/www/test-sequinsandscrums-org
+  script: "rsync -v -r --delete-after --exclude '.git*' --exclude '*.enc' --exclude '.travis.*' $TRAVIS_BUILD_DIR/ deploy@138.197.48.54:/var/www/test-sequinsandscrums-com"
   on:
     branch: develop
